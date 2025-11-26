@@ -3,6 +3,6 @@
     $user = 19;
     $permission = true;
 
-    var_dump($user > 18 && $permission == true)
+    echo ($user > 18 && $permission == true) ? "Acesso autorizado" : "Acesso negado";
 
 ?>
