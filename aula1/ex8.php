@@ -5,7 +5,7 @@
 
     $media = ($nota1 + $nota2) / 2;
 
-    var_dump($media >= 7);
+    echo ($media >= 7) ? "Aprovado" : "Reprovado";
     
 
 ?>
