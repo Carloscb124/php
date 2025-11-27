@@ -33,7 +33,7 @@ http://localhost/php/aula2/calc.php
 ## 📚 Tecnologias utilizadas
 - PHP 8+
 - HTML/CSS
-- Servidor local (PHP embutido, XAMPP ou Laragon)
+- Servidor local (PHP embutido, XAMPP)
 
 ## 🧠 Progresso
 Este repositório será atualizado conforme avanço nos estudos.
