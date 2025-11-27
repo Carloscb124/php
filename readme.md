@@ -19,7 +19,7 @@ php -S localhost:8000
 ```
 Acesse no navegador:
 ```
-http://localhost:8000
+http://localhost/php/aula2/calc.php
 ```
 
 ### 2. Usando XAMPP / WAMP / Laragon
@@ -27,13 +27,13 @@ http://localhost:8000
 2. Inicie o Apache
 3. Acesse:
 ```
-http://localhost/nomedapasta
+http://localhost/php/aula2/calc.php
 ```
 
 ## 📚 Tecnologias utilizadas
 - PHP 8+
 - HTML/CSS
-- Servidor local (PHP embutido, XAMPP ou Laragon)
+- Servidor local (PHP embutido, XAMPP)
 
 ## 🧠 Progresso
 Este repositório será atualizado conforme avanço nos estudos.
