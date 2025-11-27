@@ -19,7 +19,7 @@ include "conexao.php";
 
 <body>
 
- <nav class="navbar navbar-dark bg-dark pd-5 b-5 ">
+ <nav class="navbar navbar-dark bg-dark px-3 pt-5 pb-5 ">
   <div class="container d-flex justify-content-center align-items-center">
     <h2 class="text-white me-3">Agenda de Contato</h2>
     <a href="adicionar.php" class="btn btn-outline-light">Adicionar Contato</a>
@@ -27,7 +27,7 @@ include "conexao.php";
 </nav>
 
 
-  <table style="border: 1px solid #000;" cellpadding="8">
+  <table class="table mt-2" style="border: 1px solid #000;" cellpadding="8">
 
     <!-- Cabeçalho da tabela -->
     <tr>
