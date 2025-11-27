@@ -27,7 +27,7 @@ http://localhost:8000
 2. Inicie o Apache
 3. Acesse:
 ```
-http://localhost/php/aula2/calc.php
+http://localhost/nomedapasta
 ```
 
 ## 📚 Tecnologias utilizadas

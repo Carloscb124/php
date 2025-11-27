@@ -30,7 +30,7 @@ C:\xampp\htdocs\php\
 2. Inicie o Apache pelo XAMPP.
 3. Acesse no navegador:
 ```
-http://localhost/php/
+http://localhost/php/aula2/calc.php
 ```
 4. Preencha os campos, selecione a operação e clique em **Calcular**.
 
