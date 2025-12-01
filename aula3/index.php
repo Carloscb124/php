@@ -38,7 +38,6 @@ $res = $con->query($sql);
       text-align: center;
       white-space: nowrap;
     }
-
   </style>
 </head>
 
@@ -56,6 +55,18 @@ $res = $con->query($sql);
   <div class="container mt-5">
 
     <div class="tabela-flutuante">
+
+      <?php if (isset($_GET['delete']) && $_GET['delete'] === 'ok'): ?>
+        <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+          Contato excluído com sucesso!
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- recarrega sozinho depois de 1s -->
+        <meta http-equiv="refresh" content="1;URL=index.php">
+      <?php endif; ?>
+
+
 
       <table class="table table-striped table-bordered mb-0">
         <thead class="table-dark">
