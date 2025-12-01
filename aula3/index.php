@@ -1,6 +1,9 @@
 <?php
-// Inclui o arquivo de conexão com o banco de dados
 include "conexao.php";
+
+$sql = "SELECT * FROM contatos ORDER BY nome";
+$res = $con->query($sql);
+
 ?>
 
 <!doctype html>
@@ -10,63 +13,88 @@ include "conexao.php";
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agenda</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+    .tabela-flutuante {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35),
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.05);
+      transform: translateY(0);
+      transition: transform .2s ease;
+    }
+
+    .tabela-flutuante:hover {
+      transform: translateY(-4px);
+    }
+
+    .acao-col {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+  </style>
 </head>
 
-<style>
+<body class="bg-ligth">
 
-</style>
+  <nav class="navbar navbar-dark bg-dark px-3 py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h2 class="text-white m-0">Agenda de Contato</h2>
+      <a href="adicionar.php" class="btn btn-outline-light">
+        Adicionar Contato
+      </a>
+    </div>
+  </nav>
 
-<body>
+  <div class="container mt-5">
 
- <nav class="navbar navbar-dark bg-dark px-3 pt-5 pb-5 ">
-  <div class="container d-flex justify-content-center align-items-center">
-    <h2 class="text-white me-3">Agenda de Contato</h2>
-    <a href="adicionar.php" class="btn btn-outline-light">Adicionar Contato</a>
+    <div class="tabela-flutuante">
+
+      <table class="table table-striped table-bordered mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <?php while ($c = $res->fetch_assoc()): ?>
+            <tr>
+              <td><?= $c['id'] ?></td>
+              <td><?= $c['nome'] ?></td>
+              <td><?= $c['telefone'] ?></td>
+              <td><?= $c['email'] ?></td>
+
+              <td class="acao-col">
+                <a href="editar.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-primary me-1">
+                  <i class="bi bi-pencil-square"></i>Editar
+                </a>
+
+                <a href="excluir.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-danger">
+                  <i class="bi bi-trash"></i>Excluir
+                </a>
+              </td>
+            </tr>
+          <?php endwhile; ?>
+        </tbody>
+
+      </table>
+
+    </div>
+
   </div>
-</nav>
 
-
-  <table class="table mt-2" style="border: 1px solid #000;" cellpadding="8">
-
-    <!-- Cabeçalho da tabela -->
-    <tr>
-      <th>ID</th>
-      <th>Nome</th>
-      <th>Telefone</th>
-      <th>Email</th>
-      <th>Ações</th>
-    </tr>
-
-    <?php
-    // Consulta os contatos ordenados pelo nome
-    $sql = "SELECT * FROM contatos ORDER BY nome";
-
-    // Executa a query
-    $res = $con->query($sql);
-
-    // Percorre cada linha retornada pelo banco
-    while ($c = $res->fetch_assoc()):
-    ?>
-
-      <tr>
-        <!-- Exibe os dados de cada coluna -->
-        <td><?= $c['id'] ?></td>
-        <td><?= $c['nome'] ?></td>
-        <td><?= $c['telefone'] ?></td>
-        <td><?= $c['email'] ?></td>
-
-        <td>
-          <!-- Botão de editar passando o id pela URL -->
-          <a href="editar.php?id=<?= $c['id'] ?>">Editar</a>
-
-          <!-- Botão de excluir passando o id pela URL -->
-          <a href="excluir.php?id=<?= $c['id'] ?>">Excluir</a>
-        </td>
-      </tr>
-
-    <?php endwhile; ?>
-  </table>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
