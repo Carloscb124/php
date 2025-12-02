@@ -54,9 +54,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 580.034964405047,
-			"y": -593.0740673562836,
-			"lastActivityTimestamp": 1764715086859,
+			"x": -733.5452289406933,
+			"y": 698.3394963994444,
+			"lastActivityTimestamp": 1764717743672,
 			"meta": {}
 		},
 		{
@@ -508,9 +508,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1045.7570943079531,
-			"y": 1009.3668436357369,
-			"z": 0.35551902034602934,
+			"x": 1435.7778808783764,
+			"y": 1091.9679239251982,
+			"z": 0.25917336583225536,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1065,9 +1065,9 @@
 			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:AFBlnxGX0CBoEgBOExcft"
+				"shape:XzHoHvJApvJofahH1zXZf"
 			],
-			"hoveredShapeId": "shape:AFBlnxGX0CBoEgBOExcft",
+			"hoveredShapeId": "shape:XzHoHvJApvJofahH1zXZf",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1248,8 +1248,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 218.09668387876263,
-			"y": -1487.8025382295834,
+			"x": 248.96405319470477,
+			"y": -1040.2256831484228,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1468,7 +1468,7 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -679.2547696151287,
+			"x": -810.163073637648,
 			"y": -15.707967948832675,
 			"rotation": 0,
 			"isLocked": false,
@@ -1483,7 +1483,7 @@
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": false,
-				"scale": 0.9110056067402392,
+				"scale": 1.1617877983542608,
 				"richText": {
 					"type": "doc",
 					"content": [
@@ -2212,7 +2212,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "nesw-resize",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -2602,7 +2602,7 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -700.9037954701394,
+			"x": -832.0901150628933,
 			"y": -56.62488972090671,
 			"rotation": 0,
 			"isLocked": false,
@@ -2611,8 +2611,8 @@
 			"id": "shape:T8CoWrSWxFYk-iIRbVSXD",
 			"type": "geo",
 			"props": {
-				"w": 468.5242912610211,
-				"h": 627.3360388672583,
+				"w": 599.710610853775,
+				"h": 831.8323605853749,
 				"geo": "rectangle",
 				"dash": "draw",
 				"growY": 0,
