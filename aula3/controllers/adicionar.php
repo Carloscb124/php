@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ include "conexao.php";
     <nav class="navbar navbar-dark bg-dark px-3 py-4 mb-4">
         <div class="container d-flex justify-content-between align-items-center">
             <h2 class="text-white m-0">Cadastratar Contato</h2>
-            <a href="index.php" class="btn btn-outline-light">
+            <a href="../pages/index.php" class="btn btn-outline-light">
                 <i class="bi bi-arrow-left"></i> Voltar
             </a>
         </div>
@@ -71,7 +71,7 @@ include "conexao.php";
             </div>
             ";
 
-            echo "<meta http-equiv='refresh' content='1;URL=index.php'>";
+            echo "<meta http-equiv='refresh' content='1;URL=../pages/index.php'>";
         }
         ?>
 

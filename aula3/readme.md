@@ -5,9 +5,9 @@ Este projeto é uma aplicação de agenda desenvolvida em **PHP** com **MySQL**,
 
 ## 🖼 Prévia do Sistema
 
-![Tela 1](image1.png)
-![Tela 2](image2.png)
-![Tela 3](image3.png)
+![Tela 1](assets/image1.png)
+![Tela 2](assets/image2.png)
+![Tela 3](assets/image3.png)
 
 ## 🚀 Funcionalidades
 - Adicionar novos contatos

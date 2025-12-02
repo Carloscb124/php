@@ -1,6 +1,6 @@
 <?php
 
-include "conexao.php";
+include "../conexao.php";
 
 // recebe o ID do contato enviado na URL
 $id = $_GET['id'];
@@ -58,7 +58,7 @@ $contato = $con->query($sql)->fetch_assoc();
     <nav class="navbar navbar-dark bg-dark px-3 py-4 mb-4">
         <div class="container d-flex justify-content-between align-items-center">
             <h2 class="text-white m-0">Editar Contato</h2>
-            <a href="index.php" class="btn btn-outline-light">
+            <a href="../pages/index.php" class="btn btn-outline-light">
                 <i class="bi bi-arrow-left"></i> Voltar
             </a>
         </div>
@@ -88,7 +88,7 @@ $contato = $con->query($sql)->fetch_assoc();
             </div>
             ";
 
-                echo "<meta http-equiv='refresh' content='1;URL=index.php'>";
+                echo "<meta http-equiv='refresh' content='1;URL=../pages/index.php'>";
             }
 
             ?>

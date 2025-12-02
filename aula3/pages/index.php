@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 
 $sql = "SELECT * FROM contatos ORDER BY nome";
 $res = $con->query($sql);
@@ -46,7 +46,7 @@ $res = $con->query($sql);
   <nav class="navbar navbar-dark bg-dark px-3 py-4">
     <div class="container d-flex justify-content-between align-items-center">
       <h2 class="text-white m-0">Agenda de Contato</h2>
-      <a href="adicionar.php" class="btn btn-outline-light">
+      <a href="../controllers/adicionar.php" class="btn btn-outline-light">
         Adicionar Contato
       </a>
     </div>
@@ -88,12 +88,12 @@ $res = $con->query($sql);
               <td><?= $c['email'] ?></td>
 
               <td class="acao-col">
-                <a href="editar.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-primary me-1">
+                <a href="../controllers/editar.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-primary me-1">
                   <i class="bi bi-pencil-square"></i>Editar
                 </a>
 
                 <a
-                  href="excluir.php?id=<?= $c['id'] ?>"
+                  href="../controllers/excluir.php?id=<?= $c['id'] ?>"
                   class="btn btn-sm btn-danger"
                   onclick="return confirm('Tem certeza que quer excluir esse contato?')">
                   <i class="bi bi-trash"></i>Excluir
