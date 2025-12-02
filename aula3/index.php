@@ -92,7 +92,10 @@ $res = $con->query($sql);
                   <i class="bi bi-pencil-square"></i>Editar
                 </a>
 
-                <a href="excluir.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-danger">
+                <a
+                  href="excluir.php?id=<?= $c['id'] ?>"
+                  class="btn btn-sm btn-danger"
+                  onclick="return confirm('Tem certeza que quer excluir esse contato?')">
                   <i class="bi bi-trash"></i>Excluir
                 </a>
               </td>
