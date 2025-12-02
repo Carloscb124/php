@@ -43,14 +43,22 @@ $res = $con->query($sql);
 
 <body class="bg-ligth">
 
-  <nav class="navbar navbar-dark bg-dark px-3 py-4">
+  <nav class="navbar navbar-dark bg-dark px-3 py-3">
     <div class="container d-flex justify-content-between align-items-center">
-      <h2 class="text-white m-0">Agenda de Contato</h2>
-      <a href="../controllers/adicionar.php" class="btn btn-outline-light">
-        Adicionar Contato
-      </a>
+        <h2 class="text-white m-0">Agenda de Contato</h2>
+        <div class="d-flex align-items-center gap-3">
+            <a href="../controllers/adicionar.php" class="btn btn-outline-light">
+                <i class="bi bi-plus-circle me-1"></i> Adicionar Contato
+            </a>
+            <a href="../pages/home.php" class="btn btn-outline-light">
+                <i class="bi bi bi-arrow-left me-1"></i> Voltar
+            </a>
+            <a href="../controllers/logout.php" class="btn btn-outline-danger">
+                <i class="bi bi-box-arrow-right me-1"></i> Sair
+            </a>  
+        </div>
     </div>
-  </nav>
+</nav>
 
   <div class="container mt-5">
 
