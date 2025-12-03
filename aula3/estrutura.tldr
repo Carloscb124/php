@@ -70,12 +70,12 @@
 			"typeName": "binding"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": -2567.2777657836473,
-			"y": -1763.0158460383109,
+			"x": 0,
+			"y": 0,
 			"lastActivityTimestamp": 0,
-			"meta": {}
+			"meta": {},
+			"id": "pointer:pointer",
+			"typeName": "pointer"
 		},
 		{
 			"x": -1755.877039545592,
@@ -612,9 +612,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 2567.2777657836473,
-			"y": 1763.0158460383109,
-			"z": 0.23682526353849412,
+			"x": 2243.6585731046252,
+			"y": 3323.1862120126752,
+			"z": 0.13120627903445312,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -2528,7 +2528,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1572,
+				"w": 786,
 				"h": 918
 			},
 			"insets": [
