@@ -59,6 +59,10 @@ $nome = $_SESSION['user']['nome'];
     
 </div>
 
+<div class="d-flex justify-content-center align-items-center mt-4">
+    <img src="../assets/workHome.png" width="700px">
+</div>
+
 </div>
 
 </body>

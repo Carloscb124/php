@@ -47,10 +47,10 @@ $res = $con->query($sql);
     <div class="container d-flex justify-content-between align-items-center">
         <h2 class="text-white m-0">Usuários</h2>
         <div class="d-flex align-items-center gap-3">
-            <a href="../controllers/adicionar.php" class="btn btn-outline-light">
-                <i class="bi bi-plus-circle me-1"></i> Adicionar Contato
+            <a href="../controllers/adicionarUser.php" class="btn btn-outline-light">
+                <i class="bi bi-plus-circle me-1"></i> Adicionar Usuarios
             </a>
-            <a href="../pages/home.php" class="btn btn-outline-light">
+            <a href="home.php" class="btn btn-outline-light">
                 <i class="bi bi bi-arrow-left me-1"></i> Voltar
             </a> 
         </div>
@@ -68,7 +68,7 @@ $res = $con->query($sql);
         </div>
 
         <!-- recarrega sozinho depois de 1s -->
-        <meta http-equiv="refresh" content="1;URL=index.php">
+        <meta http-equiv="refresh" content="1;URL=user.php">
       <?php endif; ?>
 
 
@@ -91,12 +91,12 @@ $res = $con->query($sql);
               <td><?= $c['email'] ?></td>
 
               <td class="acao-col">
-                <a href="../controllers/editar.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-primary me-1">
+                <a href="../controllers/editarUser.php?id=<?= $c['id'] ?>" class="btn btn-sm btn-primary me-1">
                   <i class="bi bi-pencil-square"></i>Editar
                 </a>
 
                 <a
-                  href="../controllers/excluir.php?id=<?= $c['id'] ?>"
+                  href="../controllers/excluirUser.php?id=<?= $c['id'] ?>"
                   class="btn btn-sm btn-danger"
                   onclick="return confirm('Tem certeza que quer excluir esse contato?')">
                   <i class="bi bi-trash"></i>Excluir
