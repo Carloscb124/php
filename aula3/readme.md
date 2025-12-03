@@ -1,46 +1,89 @@
+# 📂 Sistema de Agenda em PHP
 
-# 📒 Sistema de Agenda (CRUD em PHP)
+Aplicação simples de agenda desenvolvida em PHP com MySQL. O sistema permite cadastrar usuários, fazer login, registrar contatos, editar, excluir e visualizar as informações em uma interface organizada.
 
-Este projeto é uma aplicação de agenda desenvolvida em **PHP** com **MySQL**, permitindo cadastrar, listar, editar e excluir contatos.
-
-## 🖼 Prévia do Sistema
-
-![Tela 1](assets/image1.png)
-![Tela 2](assets/image2.png)
-![Tela 3](assets/image3.png)
+As telas incluem login, cadastro, home, gerenciamento de usuários e agenda.
 
 ## 🚀 Funcionalidades
-- Adicionar novos contatos
-- Listar contatos
-- Editar informações
-- Excluir registros
-- Conexão com MySQL usando `mysqli`
 
-## 🗂 Estrutura
+• Cadastro de usuários  
+• Login e autenticação usando sessões  
+• Registro de contatos  
+• Listagem de contatos  
+• Edição de contatos  
+• Exclusão de contatos  
+• Logout  
+• Interface simples usando Bootstrap  
+
+## 📸 Screenshots
+
+### Tela de Login  
+![Login](assets/login.png)
+
+### Tela de Registro  
+![Register](assets/register.png)
+
+### Home da Agenda  
+![Home](assets/home.png)
+
+### Criar Contato  
+![Criar contato](assets/agenda.png)
+
+### Página do Usuário  
+![User](assets/user.png)
+
+### Estrutura da Aplicação  
+![Estrutura](estrurura.png)
+
+## 🛠️ Tecnologias Utilizadas
+
+• PHP  
+• MySQL  
+• HTML  
+• Bootstrap  
+• Sessions nativas do PHP  
+
+## 📁 Estrutura do Projeto
+
 ```
 aula3/
-├── adicionar.php
-├── editar.php
-├── excluir.php
-├── index.php
-├── conexao.php
-├── image1.png
-├── image2.png
-└── image3.png
+├─ assets/
+│  ├─ agenda.png
+│  ├─ home.png
+│  ├─ login.png
+│  ├─ register.png
+│  ├─ user.png
+│  └─ workHome.png
+├─ controllers/
+│  ├─ adicionar.php
+│  ├─ adicionarUser.php
+│  ├─ editar.php
+│  ├─ editarUser.php
+│  ├─ excluir.php
+│  ├─ excluirUser.php
+│  ├─ loginAction.php
+│  ├─ logout.php
+│  └─ registerAction.php
+├─ pages/
+│  ├─ home.php
+│  ├─ index.php
+│  ├─ login.php
+│  ├─ register.php
+│  └─ user.php
+├─ conexao.php
+├─ estrurura.png
+├─ estrurura.tldr
+└─ readme.md
 ```
 
-## 🗄 Banco de Dados
-```sql
-CREATE TABLE contatos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-    telefone VARCHAR(20),
-    email VARCHAR(100)
-);
-```
+## 🔧 Configuração
 
-## ▶ Como rodar
-1. Colocar a pasta no `htdocs`
-2. Criar o banco `agenda`
-3. Importar a tabela acima
-4. Acessar: `http://localhost/aula3/`
+1. Importe o banco no MySQL.  
+2. Ajuste a conexão no arquivo `conexao.php`.  
+3. Coloque o projeto no servidor local (XAMPP).  
+4. Acesse no navegador:  
+   `http://localhost/aula3/pages/login.php`
+
+## 📜 Licença
+
+Livre para estudar, modificar e melhorar.
