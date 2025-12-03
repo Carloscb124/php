@@ -72,9 +72,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": -1106.2849864226719,
-			"y": 154.00936156250668,
-			"lastActivityTimestamp": 1764766839378,
+			"x": -2567.2777657836473,
+			"y": -1763.0158460383109,
+			"lastActivityTimestamp": 0,
 			"meta": {}
 		},
 		{
@@ -2546,7 +2546,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 1,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": null,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
