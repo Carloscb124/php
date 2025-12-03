@@ -6,6 +6,11 @@ $nome  = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha']; // pega a senha antes
 
+if (strlen($senha) < 6) {
+    header("Location: ../pages/register.php?erro=senha-curta");
+    exit;
+}
+
 $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
 // verifica email duplicado

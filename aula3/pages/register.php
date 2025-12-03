@@ -123,6 +123,7 @@
                                            id="senha" 
                                            required 
                                            autocomplete="new-password"
+                                           minlength="6"
                                            placeholder="Crie uma senha">
                                     <button class="btn btn-outline-secondary" type="button" id="togglePassword">
                                         <i class="bi bi-eye"></i>
