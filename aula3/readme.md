@@ -33,7 +33,7 @@ As telas incluem login, cadastro, home, gerenciamento de usuários e agenda.
 ![User](assets/user.png)
 
 ### Estrutura da Aplicação  
-![Estrutura](estrurura.png)
+![Estrutura](estrutura.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
